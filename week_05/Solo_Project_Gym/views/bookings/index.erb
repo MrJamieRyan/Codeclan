@@ -1,0 +1,19 @@
+
+<h2>
+  <p class="btn--wrapper">
+  <a class="btn btn--booking" href="/bookings/new">New Booking</a>
+</p>
+</h2>
+
+<h2>
+<div class="bookings">
+  <h1>Bookings</h1>
+<ol>
+  <% for booking in @bookings %>
+  <li>
+  <p><%= booking.member.name %> <%= @actions.sample %> <br> <%= booking.lesson.name %> </p>
+  </li>
+  <% end %>
+</ol>
+</div>
+</h2>

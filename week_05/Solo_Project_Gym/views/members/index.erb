@@ -1,0 +1,16 @@
+<h2><p class="btn--wrapper">
+  <a class="btn btn--new" href="/members/new">New Member</a>
+</p>
+</h2>
+<h2>
+<div class="members">
+  <% @members.each do |member| %>
+
+    <p>Name: <%= member.name %> </p>
+    <a href="/members/<%=member.id%>">Show Details</a>
+    <br>
+
+  <% end %>
+</div>
+
+</h2>

@@ -1,0 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+
+<h1><%= @lesson.name %> (lesson)</h1>
+
+<h3>Members attending this lesson:</h3>
+
+<ul>
+  <% @lesson.members.each do |member| %>
+  <li><%= member.name %></li>
+  <% end %>
+</ul>
+
