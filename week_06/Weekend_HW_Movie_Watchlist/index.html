@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Jamie Ryan's Movie Watchlist</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div id="title-wrapper">
+    <h1>Jamie Ryan's Movie Watchlist</h1>
+    <p>Add a movie you would like to watch below</p>
+  </div>
+  <div id="header-wrapper">
+  </div>
+  <div id="form-wrapper">
+    <form id="new-item-form">
+      <div class="form-item-label">
+        <label for="name" class="primary">Movie Name</label>
+      </div>
+      <div class="form-item">
+        <input type="text" id="name" required/>
+      </div>
+      <div class="form-item-label">
+        <label for="team" class="primary">Streaming Service</label>
+      </div>
+      <div class="form-item">
+        <select id="service" required>
+          <option value="" disabled selected></option>
+          <option value="Netflix">Netflix</option>
+          <option value="Amazon Prime">Amazon Prime</option>
+          <option value="Now TV">Now TV</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <input type="submit" value="Save Movie" class="button"/>
+    </form>
+  </div>
+  <div id="list-header">
+    <h2>Your Movie Watch List</h2>
+  </div>
+  <div id="list">
+    <ul id="movie-list">
+    </ul>
+  </div>
+  <div id="delete-button">
+    <button id="delete-button" class="button">Delete All</button>
+  </div>
+
+</body>
+</html>

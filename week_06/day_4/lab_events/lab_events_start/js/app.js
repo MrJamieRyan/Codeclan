@@ -16,3 +16,4 @@ const handleFormSubmit = function(event) {
   const resultParagraph = document.querySelector('#reading-list')
   resultParagraph.textContent = ` Title: ${event.target.title.value} Author: ${event.target.author.value} Category: ${event.target.category.value}`;}
  
+  
